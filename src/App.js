@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Layout from './componnents/Layout'
+import Layout from './components/Layout'
+import './index.css';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="container">
-       <layout title="Chat Application"/>
-      </div>
+   
+      <Layout title="Chat-App"/>
+      
+    
     );
   }
 }
