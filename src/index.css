@@ -90,7 +90,7 @@ input,textarea{
 #side-bar .side-bar-select__option.active{
     background:#0e6b57;
 }
-/*
+
 #side-bar .search{
     background:#03a6b4;
     box-sizing:border-box;
@@ -144,7 +144,7 @@ input,textarea{
     left:7px;
 }
 
-*/
+
 
 #side-bar .users{
     overflow-y:scroll;

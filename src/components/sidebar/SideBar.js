@@ -51,12 +51,20 @@ export default class SideBar extends Component{
     return (
       <div id="side-bar">
           <div className="heading">
-            <div className="app-name"><h2><strong>CONVOKE</strong></h2></div>
+            <div className="app-name"><h2><strong>CONVOKER</strong></h2></div>
             <div className="menu">
              
             </div>
           </div>
-          
+          <form onSubmit={this.handleSubmit} className="search">
+						<i className="search-icon"><FASearch /></i>
+						<input 
+							placeholder="Search" 
+							type="text"
+							value={reciever}
+							onChange={(e)=>{ this.setState({reciever:e.target.value}) }}/>
+						<div className="plus"></div>
+					</form>
           <div className="side-bar-select">
             <div 
               onClick = { ()=>{ this.setActiveSideBar(SideBar.type.CHATS) } }
