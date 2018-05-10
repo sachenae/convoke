@@ -109,7 +109,7 @@ export default class SideBar extends Component{
           <div className="current-user">
             <span>{user.name}</span>
             <div onClick={()=>{logout()}} title="Logout" className="logout">
-            Logout <MdEject/>
+           <h5>Logout</h5> <MdEject/>
             </div>
           </div>
       </div>
