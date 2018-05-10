@@ -51,20 +51,9 @@ export default class SideBar extends Component{
     return (
       <div id="side-bar">
           <div className="heading">
-            <div className="app-name">ConvokE <FAChevronDown /></div>
-            <div className="menu">
-              <FAMenu />
-            </div>
+            <div className="app-name">ConvokE </div>
           </div>
-          <form onSubmit={this.handleSubmit} className="search">
-            <i className="search-icon"><FASearch /></i>
-            <input 
-              placeholder="Search" 
-              type="text"
-              value={reciever}
-              onChange={(e)=>{ this.setState({reciever:e.target.value}) }}/>
-            <div className="plus"></div>
-          </form>
+         
           <div className="side-bar-select">
             <div 
               onClick = { ()=>{ this.setActiveSideBar(SideBar.type.CHATS) } }
